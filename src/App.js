@@ -6,11 +6,11 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-      <Router basename="/">
+      <Router basename="/web-test">
         <nav>
           <ul>
-            <li><Link to="/">Главная</Link></li>
-            <li><Link to="/profile">Профиль</Link></li>
+            <li><Link to="">Главная</Link></li>
+            <li><Link to="profile">Профиль</Link></li>
           </ul>
         </nav>
 
