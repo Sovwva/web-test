@@ -6,6 +6,9 @@
     <title>Redirecting...</title>
     <script>
         console.log(window.location.href)
+         setTimeout(() => {
+            console.log("Этот код не выполнится");
+        }, 5000);
         var redirectTo = location.pathname + location.search;
         sessionStorage.setItem('redirectPath', redirectTo);
         window.location.replace('/');
