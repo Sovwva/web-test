@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        console.log("СУКА")
-        console.log(window.location.href)
-        // var redirectTo = location.pathname + location.search;
-        // sessionStorage.setItem('redirectPath', redirectTo);
-        // window.location.replace('/');
+        const segmentCount = 1; // Укажите количество сегментов в URL вашего репозитория
+        sessionStorage.redirect = location.href.replace(/^[^:]+:\/\/[^/]+/, '');
+        location.replace(location.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/index.html');
     </script>
 </head>
 <body>
