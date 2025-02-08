@@ -16,6 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://Sovwva.github.io/web-test",
   "eslintConfig": {
     "extends": [
       "react-app",
